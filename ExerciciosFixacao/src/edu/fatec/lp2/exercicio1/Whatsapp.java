@@ -13,13 +13,16 @@ public class Whatsapp {
 
     public void listarContatos(){
         for(Contatinho contato: contatos){
-            System.out.println("Contato: "+contato);
+            System.out.println("Nome Contato: "+contato.getNome());
+            System.out.println("Celular Contato: "+contato.getCelular());
         }
     }
 
     public void listarMensagens(){
         for(Mensagem msg: mensagens){
-            System.out.println("Mensagem: "+msg);
+            System.out.println("Destino Mensagem: "+msg.getDestinatario());
+            System.out.println("Hora Mensagem: "+msg.getHoraEnvio());
+            System.out.println("Conteudo Mensagem: "+msg.getConteudo());
         }
     }
 
